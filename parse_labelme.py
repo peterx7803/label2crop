@@ -76,12 +76,13 @@ def xml2dict(xml_path, product):
 
 # This function help you to prepare polygon format needed by PIL, But you should check mixed_x_y is empty or not before calling poly2mask function.
 def merge_x_y_pts(file_exist, xpts, ypts):
-  mixed_x_y = []
-  if file_exist:
-    for pt_idx in range(0,len(xpts)):
-      mixed_x_y.append(xpts[pt_idx])
-      mixed_x_y.append(ypts[pt_idx])
-  return mixed_x_y
+	mixed_x_y = []
+	if file_exist:
+		for pt_idx in range(0,len(xpts)):
+			mixed_x_y.append(xpts[pt_idx])
+			mixed_x_y.append(ypts[pt_idx])
+			
+	return mixed_x_y
 
 
 

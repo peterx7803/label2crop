@@ -1,6 +1,6 @@
 # label2crop
 
-This python proving three functions to parse MIT labelMe xml into mask.
+This program proving three functions to parse MIT labelMe xml into mask.
 
 #### xml2dict function: 
 parse MIT LabelMe annotation into polygon list.

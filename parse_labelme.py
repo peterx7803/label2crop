@@ -90,6 +90,6 @@ def poly2mask(mixed_x_y, fill_value=255):
 	width = 640
 	height = 480
 	img = Image.new('L', (width, height), 0)
-	ImageDraw.Draw(img).polygon(polygon, outline=1, fill=fill_value)
+	ImageDraw.Draw(img).polygon(mixed_x_y, outline=1, fill=fill_value)
 	mask = np.array(img)
 	return mask

@@ -74,7 +74,7 @@ def xml2dict(xml_path, product):
 		file_exist = False
 		return file_exist, xpts, ypts
 
-# This function help you to prepare polygon format needed by PIL, But you should check mixed_x_y is empty or not before calling poly2mask function.
+# This function help you to prepare polygon format needed by PIL.
 def merge_x_y_pts(file_exist, xpts, ypts):
 	mixed_x_y = []
 	if file_exist:

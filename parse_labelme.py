@@ -100,7 +100,7 @@ def poly2mask(mixed_x_y, fill_value=255):
 	return mask
 
 
-
+# This function help you to crop mask area from original iamge.
 def mask_image_crop(mask, img):
 	H = 480
 	W = 640

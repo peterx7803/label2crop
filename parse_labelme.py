@@ -43,7 +43,7 @@ def xml2dict(xml_path, product):
 		try: ## xml exist and have label
 			object_ = label_dict['annotation']['object']
 			#print object_
-			if object_['name'] == 'folgers_new'  and object_['deleted'] == '0':
+			if object_['name'] == product  and object_['deleted'] == '0':
 				
 				#print object_['polygon']['pt']			
 				pts.append(object_['polygon']['pt'])
